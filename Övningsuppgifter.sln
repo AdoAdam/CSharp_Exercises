@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loopar", "Loopar\Loopar.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexering", "Indexering\Indexering.csproj", "{04062126-C26A-4DBE-8B39-800FD9BDC340}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktioner", "Funktioner\Funktioner.csproj", "{B2BAE7C8-D0CC-4339-937D-B88CB40C503B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{04062126-C26A-4DBE-8B39-800FD9BDC340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04062126-C26A-4DBE-8B39-800FD9BDC340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04062126-C26A-4DBE-8B39-800FD9BDC340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BAE7C8-D0CC-4339-937D-B88CB40C503B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BAE7C8-D0CC-4339-937D-B88CB40C503B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BAE7C8-D0CC-4339-937D-B88CB40C503B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BAE7C8-D0CC-4339-937D-B88CB40C503B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
