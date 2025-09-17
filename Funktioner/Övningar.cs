@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Numerics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Funktioner
 {
@@ -8,6 +9,8 @@ namespace Funktioner
         {
             while (true)
             {
+                Console.Clear();
+                Console.ResetColor();
                 Console.WriteLine("\nVälj en övning att köra:" +
                     "\n1. Slå ihop för- och efternamn" +
                     "\n2. Slå ihop för- och efternamn - returnera" +
@@ -18,10 +21,11 @@ namespace Funktioner
                     "\n7. Beräkna medelvärde av int-array" +
                     "\n8. Siffror till text" +
                     "\n9. Heltal till text" +
-                    "\n10.Hitta index för alla förekomster av ett givet tecken" + 
+                    "\n10.Hitta index för alla förekomster av ett givet tecken" +
                     "\n11. Kasta tärning + " +
                     "\n12. Rita en box" +
-                    "\n13. Flytta runt ett @ med piltangenterna");
+                    "\n13. Flytta runt ett @ med piltangenterna" +
+                    "\n14. Snake");
 
                 Console.Write("\nAnge nummer: ");
                 string input = Console.ReadLine();
@@ -83,6 +87,9 @@ namespace Funktioner
                         break;
                     case "13":
                         MoveCharacterInBox();
+                        break;
+                    case "14":
+                        Snake.Play();
                         break;
                 }
             }
@@ -313,49 +320,8 @@ namespace Funktioner
                 Console.Write("-");
                 Console.SetCursorPosition(xPos, yPos);
                 Console.Write("@");
-                
+
             }
-        }        
-            #region Helper functions
-            static string CharToString(char charToString)
-            {
-                string output = "";
-
-                switch (charToString)
-                {
-                    case '1':
-                        output = "one";
-                        break;
-                    case '2':
-                        output = "two";
-                        break;
-                    case '3':
-                        output = "three";
-                        break;
-                    case '4':
-                        output = "four";
-                        break;
-                    case '5':
-                        output = "five";
-                        break;
-                    case '6':
-                        output = "six";
-                        break;
-                    case '7':
-                        output = "seven";
-                        break;
-                    case '8':
-                        output = "eight";
-                        break;
-                    case '9':
-                        output = "nine";
-                        break;
-                }
-                return output;
-            }
-
-
-            #endregion
-
+        }
     }
 }
